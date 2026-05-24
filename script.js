@@ -1,4 +1,5 @@
 // Student Quiz Page
+const DEFAULT_TIMER = 60; // seconds (change if you want)
 const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbyAsxh6kTVeBcdBRHgCjXayKxblELLWUu0gxwuWcAWNrp9UeGfaAEpm9ljG5JSUmil15w/exec';
 
 const studentForm = document.getElementById('studentForm');
