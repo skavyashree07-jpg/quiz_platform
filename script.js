@@ -1,6 +1,5 @@
 // Student Quiz Page
-const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycby6V7cWK96DhxgmcEHQOg0620L4G4wr0CSPCcUQY5FmCmsk7Y7-RTQ_QJ7NyfiHwGFNSg/exec';
-const DEFAULT_TIMER = 60;
+const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycby6V7cWK96DhxgmcEHQOg0620L4G4wr0CSPCcUQY5FmCmsk7Y7-RTQ_QJ7NyfiHwGFNSg/exec
 
 const studentForm = document.getElementById('studentForm');
 const nameEntry = document.getElementById('nameEntry');
