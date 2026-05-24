@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "timerSeconds": 60
+  },
+  "questions": [
+    {
+      "text": "What is the capital of France?",
+      "options": {
+        "A": "Paris",
+        "B": "Berlin",
+        "C": "Rome",
+        "D": "Madrid"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "text": "Which planet is known as the Red Planet?",
+      "options": {
+        "A": "Earth",
+        "B": "Mars",
+        "C": "Venus",
+        "D": "Jupiter"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "text": "What does HTML stand for?",
+      "options": {
+        "A": "Hyper Trainer Markup Language",
+        "B": "Hyper Text Markup Language",
+        "C": "High Text Machine Language",
+        "D": "Home Tool Markup Language"
+      },
+      "correctAnswer": "B"
+    }
+  ]
+}

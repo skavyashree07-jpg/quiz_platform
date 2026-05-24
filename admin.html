@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Quiz Admin</p>
+        <h1>Manage your quiz from Google Sheets</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="admin.html" class="active">Admin</a>
+        <a href="index.html">Student Quiz</a>
+      </nav>
+    </header>
+
+    <main class="layout-grid single-column">
+      <section class="card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Google Sheets Setup</p>
+            <h2>Use Google Sheets as your quiz backend</h2>
+          </div>
+        </div>
+
+        <div class="question-form">
+          <p class="helper-text">
+            Questions are now loaded from your Google Sheets <strong>Questions</strong> tab. Add or edit questions there directly, and the quiz will fetch the latest data automatically.
+          </p>
+
+          <p class="helper-text">
+            Scores are saved automatically when students submit the quiz. You can view them in your Google Sheets <strong>Scores</strong> tab.
+          </p>
+
+          <p class="helper-text">
+            If you want a timer from Sheets, add a <strong>Settings</strong> tab with a row named <strong>timer_seconds</strong>.
+          </p>
+
+          <label>
+            Google Apps Script Web App URL
+            <input type="url" id="webAppUrlInput" placeholder="https://script.google.com/macros/s/.../exec" />
+          </label>
+
+          <div class="form-actions">
+            <button type="button" id="saveUrlBtn" class="btn btn-primary">Save URL</button>
+            <button type="button" id="clearUrlBtn" class="btn btn-secondary">Clear URL</button>
+            <a href="index.html" class="btn btn-secondary">Open Student Quiz</a>
+          </div>
+
+          <p id="adminMessage" class="status-message" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

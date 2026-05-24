@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Student Quiz</p>
+        <h1>Take the quiz</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="admin.html">Admin</a>
+        <a href="index.html" class="active">Student Quiz</a>
+      </nav>
+    </header>
+
+    <main class="layout-grid single-column">
+      <section class="card hero-card">
+        <div id="nameEntry" class="name-entry">
+          <div>
+            <p class="eyebrow">Start Here</p>
+            <h2>Enter your name to begin</h2>
+            <p class="helper-text">The quiz will load from the questions saved in the admin panel.</p>
+          </div>
+          <form id="studentForm" class="student-form">
+            <label>
+              Student Name
+              <input type="text" id="studentName" placeholder="e.g. Alex Johnson" required />
+            </label>
+            <button type="submit" class="btn btn-primary">Start Quiz</button>
+          </form>
+        </div>
+
+        <div id="quizArea" class="quiz-area hidden">
+          <div class="timer-row">
+            <div>
+              <p class="eyebrow">Question Progress</p>
+              <h2 id="questionMeta">Question 1 of 1</h2>
+            </div>
+            <div id="timerBadge" class="timer-badge">Time left: <span id="timerValue">--</span></div>
+          </div>
+
+          <div class="quiz-card">
+            <p id="questionText" class="question-display"></p>
+            <div id="optionsContainer" class="option-list"></div>
+          </div>
+
+          <div class="quiz-footer">
+            <p id="selectionHint" class="helper-text">Select an option to continue.</p>
+            <button id="nextBtn" class="btn btn-primary" type="button">Next</button>
+            <button id="restartBtn" class="btn btn-secondary hidden" type="button">Restart Quiz</button>
+          </div>
+        </div>
+
+        <div id="resultArea" class="result-area hidden"></div>
+        <div id="leaderboardArea" class="leaderboard-area hidden"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
