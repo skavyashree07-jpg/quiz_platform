@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ---------------- HELPERS ----------------
   function isWebAppConfigured() {
-    return WEB_APP_URL && !WEB_APP_URL.includes('PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE');
+    return WEB_APP_URL && !WEB_APP_URL.includes('https://script.google.com/macros/s/AKfycbyAsxh6kTVeBcdBRHgCjXayKxblELLWUu0gxwuWcAWNrp9UeGfaAEpm9ljG5JSUmil15w/exec');
   }
 
   function showWarning(message) {
