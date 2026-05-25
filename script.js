@@ -159,9 +159,14 @@ document.addEventListener("DOMContentLoaded", function () {
   async function submitQuiz() {
     clearInterval(timerId);
 
-    const score = answers.reduce((total, ans, i) =>
-      total + (ans === questions[i].correctAnswer ? 1 : 0), 0
-    );
+   const score = answers.reduce((total, ans, i) =>
+  total + (
+    ans &&
+    ans.toString().trim().toUpperCase() ===
+    questions[i].correctAnswer.toString().trim().toUpperCase()
+    ? 1 : 0
+  ), 0
+);
 
     const total = questions.length;
     const percentage = Math.round((score / total) * 100);
