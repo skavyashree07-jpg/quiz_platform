@@ -3,7 +3,7 @@
 // =====================
 
 const DEFAULT_TIMER = 60;
-const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxHl9bNZk5CLdGj3iCkkdwozrux5LrLdtwaUZO1ymWPwwhZj4lTdqHBog0ypZBiloqhYw/exec';
+const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxhEBW9DXn400Rxdd7xgLgLQRJ-16K40DXHY3ijViVU1TlXJWIC_EeTZu21m7csfgcYsg/exec';
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ---------------- HELPERS ----------------
   function isWebAppConfigured() {
-    return WEB_APP_URL && !WEB_APP_URL.includes('https://script.google.com/macros/s/AKfycbxHl9bNZk5CLdGj3iCkkdwozrux5LrLdtwaUZO1ymWPwwhZj4lTdqHBog0ypZBiloqhYw/exec');
+    return WEB_APP_URL && !WEB_APP_URL.includes('https://script.google.com/macros/s/AKfycbxhEBW9DXn400Rxdd7xgLgLQRJ-16K40DXHY3ijViVU1TlXJWIC_EeTZu21m7csfgcYsg/exec');
   }
 
   function showWarning(message) {
